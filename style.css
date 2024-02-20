@@ -1,0 +1,120 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #17141d;
+  font-family: "DM Mono";
+  flex-direction: column;
+}
+
+.msgContainer {
+  border: 5px solid #00cc99;
+  border-radius: 15px;
+  width: 450px;
+  height: 650px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  flex-wrap: nowrap;
+  margin: auto;
+  border-bottom: transparent;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.incomingMsg {
+  background-color: #00cc99;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  height: fit-content;
+  width: fit-content;
+  padding: 7px;
+  margin: 5px;
+  text-wrap: wrap;
+  max-width: 400px;
+  color: #008060;
+  user-select: none;
+}
+
+.user {
+  font-size: 0.8rem;
+  transition: 200ms;
+}
+
+.user:hover {
+  /* background: linear-gradient(to left, #db2763, #b0db43); */
+  /* background: linear-gradient(to left, );*/
+  color: transparent;
+  background-clip: text;
+  color: black;
+  cursor: pointer;
+}
+
+.msg {
+  word-wrap: break-word;
+  text-wrap: wrap;
+}
+
+.outgoingMsg {
+  background-color: #00cc99;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  height: fit-content;
+  width: fit-content;
+  padding: 7px;
+  margin: 5px;
+  text-wrap: wrap;
+  max-width: 400px;
+  color: #008060;
+  user-select: none;
+  align-self: flex-end;
+}
+
+#textBox {
+  width: 300px;
+  height: 30px;
+  margin: auto;
+  border-radius: 10px;
+  background: transparent;
+  border: none;
+  font-family: "DM Mono";
+  color: #00cc99;
+  font-size: 1rem;
+}
+
+#sendBtn {
+  width: 50px;
+  height: 30px;
+  border-radius: 10px;
+  background: transparent;
+  border: none;
+  font-family: "DM Mono";
+  color: #00cc99;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#sendBtn:hover {
+  color: white;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.controlsContainer {
+  margin: auto;
+  border: 5px solid #00cc99;
+  width: 450px;
+  padding: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}

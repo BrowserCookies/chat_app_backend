@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <style>
+      body {
+        background: #17141d;
+      }
+
+      #textBox {
+        display: none;
+      }
+
+      #sendBtn {
+        display: none;
+      }
+
+      textarea {
+        display: none;
+      }
+
+      h1 {
+        color: white;
+      }
+    </style> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <input id="textBox" type="text" />
+    <input type="button" id="sendBtn" value="Send to server" />
+
+    <textarea id="resArea" readonly="true"></textarea> -->
+
+    <div id="mainContainer" class="mainContainer">
+      <div id="msgCont" class="msgContainer">
+        <!-- <article class="incomingMsg">
+          <label class="user">Vasilev</label><br />
+          <label class="msg">Hello, how are you doing?</label>
+        </article>
+
+        <article class="incomingMsg">
+          <label class="user">emael_official</label><br />
+          <label class="msg">yo wsg gs</label>
+        </article>
+
+        <article class="outgoingMsg">
+          <label class="user">koko_biskvitkata</label><br />
+          <label class="msg">Good, how about you?</label>
+        </article> -->
+      </div>
+      <div class="controlsContainer">
+        <input placeholder="Message..." id="textBox" type="text" />
+        <input type="button" id="sendBtn" value="Send" />
+      </div>
+    </div>
+
+    <h1 id="heading">Pick a username!</h1>
+    <input placeholder="Username" type="text" id="userBox">
+    <button id="enterBtn">Enter</button>
+  </body>
+  <script src="index.js"></script>
+</html>
