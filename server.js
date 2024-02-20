@@ -15,6 +15,7 @@ let msg;
 
 wss.on("connection", function connection(ws) {
   clients.push(ws);
+  ws.send("Hello listener wsg g,server")
   console.log("A new client connected");
   ws.on("message", function incoming(message) {
     console.log(`Recieved a msg: ${message}`);

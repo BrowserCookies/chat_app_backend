@@ -1,5 +1,5 @@
 const socket = new WebSocket(
-  "ws://chat-app-backend-browsercookies.onrender.com"
+  "wss://chat-app-backend-browsercookies.onrender.com"
 );
 
 const send = document.getElementById("sendBtn");
@@ -26,6 +26,8 @@ socket.addEventListener("open", () => {
 
 socket.addEventListener("message", (event) => {
   //resArea.value += `${event.data}\n`;
+
+  console.log(event.data)
 
   let resStr = new String(event.data);
   let msg = resStr.split(",");
