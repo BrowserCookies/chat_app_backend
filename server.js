@@ -35,5 +35,7 @@ server.listen(port, () => {
 });
 
 app.post("/newRoom", (req, res) => {
-  res.send("Hello from the server!");
+  res.send({
+    payload: "Hello from the server!",
+  });
 });

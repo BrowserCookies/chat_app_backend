@@ -80,6 +80,6 @@ fetch("https://chat-app-backend-browsercookies.onrender.com/newRoom", {
   method: "POST",
 }).then((res) => {
   res.json().then((data) => {
-    console.log(data);
+    console.log(data.payload);
   });
 });
