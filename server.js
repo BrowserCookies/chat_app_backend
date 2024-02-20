@@ -32,4 +32,6 @@ server.listen(port, () => {
   console.log(`An example server is listening on port ${port}`);
 });
 
-app.post("/newRoom", (req, res) => {});
+app.post("/newRoom", (req, res) => {
+  res.send("Hello from the server!")
+});

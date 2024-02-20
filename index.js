@@ -1,4 +1,4 @@
-const socket = new WebSocket("ws://4.tcp.eu.ngrok.io:14575");
+const socket = new WebSocket("https://chat-app-backend-browsercookies.onrender.com");
 
 const send = document.getElementById("sendBtn");
 const text = document.getElementById("textBox");
