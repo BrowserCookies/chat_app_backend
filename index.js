@@ -1,4 +1,6 @@
-const socket = new WebSocket("https://chat-app-backend-browsercookies.onrender.com");
+const socket = new WebSocket(
+  "ws://chat-app-backend-browsercookies.onrender.com"
+);
 
 const send = document.getElementById("sendBtn");
 const text = document.getElementById("textBox");
@@ -73,3 +75,11 @@ enterBtn.onclick = () => {
     main.style.display = "flex";
   }
 };
+
+fetch("https://chat-app-backend-browsercookies.onrender.com/newRoom", {
+  method: "POST",
+}).then((res) => {
+  res.json().then((data) => {
+    console.log(data);
+  });
+});

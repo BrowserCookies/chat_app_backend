@@ -5,6 +5,8 @@ const app = express();
 const server = require("http").createServer(app);
 const port = 5000;
 
+app.use(cors());
+
 const wss = new WebSocket.Server({ server: server });
 
 let clients = [];
@@ -33,5 +35,5 @@ server.listen(port, () => {
 });
 
 app.post("/newRoom", (req, res) => {
-  res.send("Hello from the server!")
+  res.send("Hello from the server!");
 });
